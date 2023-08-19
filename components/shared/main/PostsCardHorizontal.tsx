@@ -10,9 +10,9 @@ const PostsCardHorizontal = () => {
         title="Woman holding a mug"></div>
         <div className="shadow-xl bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
             <div className="mb-8">
-            <div class="flex justify-between items-center">
-                <span class="font-light text-gray-600">mar 10, 2019</span>
-                <a class="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500" href="#">Design</a></div>
+            <div className="flex justify-between items-center">
+                <span className="font-light text-gray-600">mar 10, 2019</span>
+                <a className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500" href="#">Design</a></div>
             
             <Link href='/' className="text-indigo-500 font-bold text-xl mb-2">Can coffee make you a better developer?</Link>
             <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>

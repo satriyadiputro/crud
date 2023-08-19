@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Brand = (props) => {
+const Brand = (props:any) => {
     const { first, last } = props.data
   return (
     <a href="/" className="flex items-center">

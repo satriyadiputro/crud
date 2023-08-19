@@ -15,7 +15,7 @@ type Term = {
 // // // // // // // // // // // // //
 //             GET METHOD           //
 // // // // // // // // // // // // //
-export const getTerms = async (param) => {
+export const getTerms = async (param:any) => {
     const terms = await prisma.term.findMany({
         where: {
             AND: [

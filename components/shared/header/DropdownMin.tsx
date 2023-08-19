@@ -2,7 +2,18 @@ import Link from 'next/link'
 import React from 'react'
 import { createPortal } from 'react-dom'
 
-const DropdownMin = (props) => {
+interface DropdownItem {
+    href: string;
+    label: string;
+    excerpt: string;
+    dropdownItems?: DropdownItem[];
+  }
+
+  interface DropdownMinProps {
+    data: DropdownItem[];
+  }
+
+const DropdownMin = (props: DropdownMinProps) => {
     return (
         <div className="text-black z-50 hidden sm:flex ml-auto">
             <ul className="gap-6 hidden sm:flex">

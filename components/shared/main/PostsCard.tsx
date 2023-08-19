@@ -14,7 +14,7 @@ const PostsCard = () => {
                     <p className="paragraph-normal text-gray-600">
                     Happy Women's Day 2022: Read on to know all about the history and significance...
                     </p>
-                    <a className="mt-3 block" href="#">Read More >></a>
+                    <a className="mt-3 block" href="#">Read More</a>
                 </div>
             </div>
         </>

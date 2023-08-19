@@ -249,7 +249,7 @@ export const addPost = async (data: any) => {
                     }
                 },
                 term: {
-                    connect: term.map(id => ({ id }))
+                    connect: term.map((id: number) => ({ id }))
                 }
             },
             select:{

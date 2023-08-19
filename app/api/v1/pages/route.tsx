@@ -18,7 +18,18 @@ export const POST = async (request: Request, response: Response) => {
   try{
     const data = await request.json()
     const page = await addPage(data)
-    return NextResponse.json(page,{status: page.status})
+    if (page) {
+      return NextResponse.json(page, { status: page.status });
+    } else {
+      return NextResponse.json(
+        {
+          status: 500,
+          message: "Internal Server Error",
+          data: "Failed to add page",
+        },
+        { status: 500 }
+      );
+    }
   } catch (err){
     return NextResponse.json( {status: 500, message:"Internal Server Error", data:err}, {status: 500} )
   }

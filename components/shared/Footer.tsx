@@ -1,4 +1,4 @@
-import Brand from "@/components/shared/header/brand";
+import Brand from "@/components/shared/header/Brand";
 
 const brandData = {
   full: "Vanjohn News",
