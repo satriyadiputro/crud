@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function HeadlineLatest() {
@@ -36,7 +37,7 @@ export default function HeadlineLatest() {
           key={index}
           className={`h-96 ${currentIndex === index + 1 ? '' : 'hidden'}`}
         >
-          <img
+          <Image
             src={image}
             alt="Image"
             className="absolute inset-0 z-10 h-full w-full object-cover opacity-70"

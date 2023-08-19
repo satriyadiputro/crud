@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const PostsLeaderboard = () => {
@@ -14,12 +15,12 @@ const PostsLeaderboard = () => {
             </div>
           </div>
           <div>
-            <img className="bg-cover" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+            <Image className="bg-cover" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
           </div>
         </div>
         <div className="mt-6 md:flex space-x-6">
           <div>
-            <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
+            <Image src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
             <div>
               <h1 className="mt-3 text-gray-800 text-2xl font-bold my-2">long established</h1>
               <p className="text-gray-700 mb-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
@@ -30,7 +31,7 @@ const PostsLeaderboard = () => {
             </div>
           </div>
           <div>
-            <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
+            <Image src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
             <div>
               <h1 className="mt-3 text-gray-800 text-2xl font-bold my-2">long established</h1>
               <p className="text-gray-700 mb-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
@@ -41,13 +42,12 @@ const PostsLeaderboard = () => {
             </div>
           </div>
           <div>
-            <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
+            <Image src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
             <div>
               <h1 className="mt-3 text-gray-800 text-2xl font-bold my-2">long established</h1>
               <p className="text-gray-700 mb-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
               <div className="flex justify-between mt-4">
                 <span className="font-thin text-sm">May 20th 2020</span>
-               
                 <span className="mb-2 text-gray-800 font-bold">Read more</span>
 </div>
 </div>

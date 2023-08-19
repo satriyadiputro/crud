@@ -1,11 +1,11 @@
+import Image from "next/image";
 import React from "react";
 
 const CardPost1 = () => {
     return (
        
         <div className="mx-auto flex w-96 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
-            <img
-            className="aspect-video w-96 rounded-t-2xl object-cover object-center"
+            <Image alt="a" className="aspect-video w-96 rounded-t-2xl object-cover object-center"
             src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
             <div className="p-4">

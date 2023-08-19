@@ -1,5 +1,7 @@
 // ./components/NewsSection.js
 
+import Image from "next/image";
+
 const NewsSection = () => {
     return (
         <div className="bg-white py-6">
@@ -10,7 +12,7 @@ const NewsSection = () => {
                 <div className="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
                 <div className="relative hover-img max-h-98 overflow-hidden">
                     <a href="#">
-                    <img
+                    <Image
                         className="max-w-full w-full mx-auto h-auto"
                         src="https://tailnews.tailwindtemplate.net/src/img/dummy/img1.jpg"
                         alt="Image description"
@@ -38,7 +40,7 @@ const NewsSection = () => {
                     <article className="flex-shrink max-w-full w-full sm:w-1/2">
                     <div className="relative hover-img max-h-48 overflow-hidden">
                         <a href="#">
-                        <img
+                        <Image
                             className="max-w-full w-full mx-auto h-auto"
                             src="https://tailnews.tailwindtemplate.net/src/img/dummy/img2.jpg"
                             alt="Image description"
@@ -63,7 +65,7 @@ const NewsSection = () => {
                     <article className="flex-shrink max-w-full w-full sm:w-1/2">
                     <div className="relative hover-img max-h-48 overflow-hidden">
                         <a href="#">
-                        <img
+                        <Image
                             className="max-w-full w-full mx-auto h-auto"
                             src="https://tailnews.tailwindtemplate.net/src/img/dummy/img2.jpg"
                             alt="Image description"
@@ -87,7 +89,7 @@ const NewsSection = () => {
                     <article className="flex-shrink max-w-full w-full sm:w-1/2">
                     <div className="relative hover-img max-h-48 overflow-hidden">
                         <a href="#">
-                        <img
+                        <Image
                             className="max-w-full w-full mx-auto h-auto"
                             src="https://tailnews.tailwindtemplate.net/src/img/dummy/img2.jpg"
                             alt="Image description"
@@ -111,7 +113,7 @@ const NewsSection = () => {
                     <article className="flex-shrink max-w-full w-full sm:w-1/2">
                     <div className="relative hover-img max-h-48 overflow-hidden">
                         <a href="#">
-                        <img
+                        <Image
                             className="max-w-full w-full mx-auto h-auto"
                             src="https://tailnews.tailwindtemplate.net/src/img/dummy/img2.jpg"
                             alt="Image description"
