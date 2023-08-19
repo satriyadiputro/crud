@@ -9,10 +9,10 @@ const PostsCard = () => {
                 <div className="p-3">
                     <span className="text-sm text-primary">November 19, 2022</span>
                     <h3 className="font-semibold text-xl leading-6 text-gray-700 my-2">
-                    International Women's Day 2022: Date, history, significance, theme this year
+                    International Womens Day 2022: Date, history, significance, theme this year
                     </h3>
                     <p className="paragraph-normal text-gray-600">
-                    Happy Women's Day 2022: Read on to know all about the history and significance...
+                    Happy Womens Day 2022: Read on to know all about the history and significance...
                     </p>
                     <a className="mt-3 block" href="#">Read More</a>
                 </div>
