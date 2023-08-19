@@ -1,0 +1,71 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./aingstudios.sqlite"
+}
+
+// Config Options
+model Options {
+  id    Int    @id @default(autoincrement())
+  name  String
+  value String
+}
+
+// Default Page
+model Page {
+  id          Int     @id @default(autoincrement())
+  slug        String  @unique
+  title       String
+  description String?
+  content     String
+}
+
+// Author
+model Author {
+  id    Int     @id @default(autoincrement())
+  slug  String  @unique
+  name  String?
+  posts Post[]
+}
+
+// All Post
+model Post {
+  id        Int     @id @default(autoincrement())
+  published Boolean @default(true)
+  slug      String  @unique
+
+  title       String
+  excerpt     String?
+  description String?
+  content     String?
+
+  thumbnail String?
+
+  author   Author @relation(fields: [authorId], references: [id])
+  authorId Int
+
+  term Term[] @relation("PostTerm")
+
+  postDate  DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Term {
+  id          Int     @id @default(autoincrement())
+  slug        String  @unique
+  taxonomy    String
+  name        String
+  description String?
+  parentId    Int?
+  parent      Term?   @relation("SubTerm", fields: [parentId], references: [id])
+  subterms    Term[]  @relation("SubTerm") // one-to-many self-relation
+
+  posts Post[] @relation("PostTerm")
+}
