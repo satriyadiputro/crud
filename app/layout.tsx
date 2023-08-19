@@ -3,11 +3,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import Header from '@/components/shared/Header'
-import LeftSidebar from '@/components/shared/LeftSidebar'
-import RightSidebar from '@/components/shared/RightSidebar'
 import Footer from '@/components/shared/Footer'
 import Link from 'next/link'
-import w3css from '@/components/shared/header/w3.css'
 
 const inter = Inter({ subsets: ['latin'] })
 

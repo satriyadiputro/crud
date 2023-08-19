@@ -2,9 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Brand from "./brand";
-import ExampleComponent from "./ExampleComponent";
-import DropdownMin from "./DropdownMin";
+import Brand from "@/components/shared/header/Brand";
+import DropdownMin from "@/components/shared/header/DropdownMin";
 
 import { useState } from "react";
 

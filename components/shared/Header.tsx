@@ -1,6 +1,6 @@
 import React from 'react';
-import ads from '../../public/ads.png';
-import Navbar from './header/Navbar';
+import ads from '@/public/ads.png';
+import Navbar from '@/components/shared/header/Navbar';
 import Image from 'next/image';
 
 export default function Header() {

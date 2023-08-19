@@ -1,9 +1,0 @@
-GET http://localhost:3000/api/authors
-Authorization: Bearer some.jwt.token
-Cookie: foo=bar
-
-###
-GET http://localhost:3000/api/authors
-
-###
-POST http://localhost:3000/api/authors
