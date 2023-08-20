@@ -15,6 +15,8 @@ const NewsSection = () => {
                     <Image
                         className="max-w-full w-full mx-auto h-auto"
                         src="https://tailnews.tailwindtemplate.net/src/img/dummy/img1.jpg"
+                        width={375}
+                        height={250}
                         alt="Image description"
                     />
                     </a>
@@ -43,6 +45,8 @@ const NewsSection = () => {
                         <Image
                             className="max-w-full w-full mx-auto h-auto"
                             src="https://tailnews.tailwindtemplate.net/src/img/dummy/img2.jpg"
+                            width={375}
+                            height={250}
                             alt="Image description"
                         />
                         </a>
@@ -68,6 +72,8 @@ const NewsSection = () => {
                         <Image
                             className="max-w-full w-full mx-auto h-auto"
                             src="https://tailnews.tailwindtemplate.net/src/img/dummy/img2.jpg"
+                            width={375}
+                            height={250}
                             alt="Image description"
                         />
                         </a>
@@ -92,6 +98,8 @@ const NewsSection = () => {
                         <Image
                             className="max-w-full w-full mx-auto h-auto"
                             src="https://tailnews.tailwindtemplate.net/src/img/dummy/img2.jpg"
+                            width={375}
+                            height={250}
                             alt="Image description"
                         />
                         </a>
@@ -116,6 +124,8 @@ const NewsSection = () => {
                         <Image
                             className="max-w-full w-full mx-auto h-auto"
                             src="https://tailnews.tailwindtemplate.net/src/img/dummy/img2.jpg"
+                            width={375}
+                            height={250}
                             alt="Image description"
                         />
                         </a>
