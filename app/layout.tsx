@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/shared/Header'
 import Footer from '@/components/shared/Footer'
 import Link from 'next/link'
+import BackToTopButton from '@/components/etc/BackToTopButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <BackToTopButton />
         <Footer />
       </body>
     </html>

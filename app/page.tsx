@@ -11,6 +11,7 @@ import PostsLeaderboard from '@/components/shared/main/PostsLeaderboard'
 import NewsSection from '@/components/shared/main/NewsSection'
 import Pagination from '@/components/shared/main/Pagination'
 import MiniCardLeaderBoard from '@/components/cards/MiniCardLeaderBoard'
+import Spacer from '@/components/etc/Spacer'
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
 <div className='container mx-auto max-w-screen-2xl'>
       <div className='md:flex md:flex-row'>
         <div className='md:w-3/4 px-4 pb-5'>
+        <Spacer title={'Latest News'} />
           {/* <HeadlineLatest /> */}
           <div>
             {/* <NewsSection /> */}
@@ -51,6 +53,7 @@ export default function Home() {
           </div>
 
           <div>
+          <Spacer title={'Recommend for you'} />
             <div className="md:flex gap-4">
               <MiniCardLeaderBoard />
               <MiniCardLeaderBoard />
