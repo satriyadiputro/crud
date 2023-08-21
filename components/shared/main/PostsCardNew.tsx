@@ -5,7 +5,7 @@ import React from 'react';
 const PostsCardNew = () => {
   return (
     <>
-        <div className="flex flex-wrap place-items-center h-screen">
+        <div className="flex flex-wrap place-items-center">
         <div className="overflow-hidden shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-5 hover:shadow-2xl rounded-lg h-90 w-60 md:w-80 m-auto">
 
             <Image alt="blog photo" src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" width={375} height={281} className="max-h-40 w-full object-cover" />
