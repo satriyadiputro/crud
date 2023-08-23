@@ -2,8 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import Header from '@/components/shared/Header'
-import Footer from '@/components/shared/Footer'
+// import Header from '@/components/shared/Header'
+import Header from '@/components/view/Header'
+import Footer from '@/components/view/Footer'
 import Link from 'next/link'
 import BackToTopButton from '@/components/etc/BackToTopButton'
 

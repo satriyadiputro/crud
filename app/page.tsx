@@ -1,77 +1,40 @@
 import Image from 'next/image'
 
 import RightSidebar from '@/components/shared/RightSidebar'
-import HeadlineLatest from '@/components/shared/main/HeadlineLatest'
-
-import PostsCard from '@/components/shared/main/PostsCard'
-import PostsCardHorizontal from '@/components/shared/main/PostsCardHorizontal'
-import PostsCardNew from '@/components/shared/main/PostsCardNew'
-import PostsCardMini from '@/components/shared/main/PostsCardMini'
-import PostsLeaderboard from '@/components/shared/main/PostsLeaderboard'
-import NewsSection from '@/components/shared/main/NewsSection'
+import HeroSection from '@/components/main/cards/HeroSection'
+import SectionTitle from '@/components/main/cards/Featured'
+import Section from '@/components/main/cards/Section'
+import LatestComponent from '@/components/main/LatestComponent'
 import Pagination from '@/components/shared/main/Pagination'
-import MiniCardLeaderBoard from '@/components/cards/MiniCardLeaderBoard'
-import Spacer from '@/components/etc/Spacer'
-import Bread from '@/components/etc/Bread'
 
 
 export default function Home() {
   return (
     <>
-<div className='container mx-auto max-w-screen-2xl'>
-      <div className='md:flex md:flex-row'>
-        <div className='md:w-3/4 px-4 pb-5'>
-        <Spacer title={'News Feed'} />
-        <Bread />
-          {/* <HeadlineLatest /> */}
-          <div>
-            {/* <NewsSection /> */}
-            {/* <PostsLeaderboard /> */}
-          </div>
-          <div>
-            <PostsCardHorizontal />
-            <PostsCardHorizontal />
-            <PostsCardHorizontal />
-            <PostsCardHorizontal />
-
-             
-          </div>
-
-          {/* <div className='pt-5 grid justify-center gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-7'>
-            <PostsCardNew />
-            <PostsCardNew />
-            <PostsCardNew />
-            <PostsCardNew />
-          </div> */}
-          {/* <div className='py-5'>
-            <PostsCardMini />
-            <PostsCardMini />
-            <PostsCardMini />
-            <PostsCardMini />
-          </div> */}
-
-          <div className='flex justify-center items-center py-10'>
+      <div className='container mx-auto max-w-screen-2xl'>
+        <div>
+        <HeroSection />
+        </div>
+        {/* <div className='p-12'>
+        <SectionTitle />
+        </div> */}
+      
+        <div className='md:flex md:flex-row px-20 py-5 gap-4'>
+          <div className='md:w-3/4'>
+            <Section name={'Latest News'}/>
+            <LatestComponent />
+            <div className='flex justify-center items-center py-10'>
             <Pagination />
           </div>
+          </div>
 
-          <div>
-          <Spacer title={'Recommend for you'} />
-            <div className="md:flex gap-4">
-              <MiniCardLeaderBoard />
-              <MiniCardLeaderBoard />
-              <MiniCardLeaderBoard />
-            </div>
+          <div className='md:w-1/4'>
+            <RightSidebar />
           </div>
 
         </div>
-
-        <div className='md:w-1/4'>
-          <RightSidebar />
-        </div>
-
+        
       </div>
-      
-    </div>
     </>
   )
 }
